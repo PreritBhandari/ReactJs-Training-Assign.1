@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with Array </title>
+</head>
+<body style="text-align: center;"> 
+    <h1 id="check">Arrays In Javascript</h1>
+</body>
+<script>
+   
+   document.write("Simply an Array <br> <br>  ")
+    var favouritePlace=  ["Biratnagar", "Lalitpur", "Patan", "Kathmandu","Pokhara","Palpa"]
+    document.write(JSON.stringify((favouritePlace)));
+   document.write("<br> <br>this is an array with length  " )
+   document.write(JSON.stringify(favouritePlace.length))
+   document.write("<br> <br> adding two more places on it : ")
+    favouritePlace.push('Chitwan',"Parbat")
+   document.write(JSON.stringify(favouritePlace))
+   document.write(" <br> <br>Sorted Array in Accending order ")
+    favouritePlace.sort()
+   document.write(JSON.stringify(favouritePlace))
+      document.write("<br> <br>this is an array with length  " )
+     document.write(favouritePlace.length);
+    var favouritePlace=  ["Biratnagar", "Lalitpur", "Patan", "Kathmandu","Pokhara","Palpa"]
+   document.write("<br><br> removing Kathmandu :")
+    favouritePlace.splice(3,1)//this or
+    delete favouritePlace[2]//this
+   document.write(JSON.stringify(favouritePlace))
+</script>
+</html>
